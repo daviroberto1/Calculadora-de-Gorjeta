@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="input-container"><label for="bill">Conta</label><br><input type="number" placeholder="0" id="bill"></div>
+            <div class="buttons">
+                <h5>Selecione a Gorjeta %</h5>
+                <div class="top-buttons">
+                    <button id="button_1" class="button">5%</button>
+                    <button id="button_2" class="button">10%</button>
+                    <button id="button_3" class="button">15%</button>
+                </div>
+                <div class="under-buttons">
+                    <button id="button_4" class="button">20%</button>
+                    <button id="button_5" class="button">25%</button>
+                    <button id="button_6" class="button">50%</button>
+                </div>
+            </div>
+            <div class="input-container"><label for="numOfPeople">Números de Pessoas</label><input type="number" placeholder="0" id="numOfPeople"></div>
+
+        </div>
+        <div class="resultado">
+            <div>
+                <h3>Valor da Gorjeta</h3>
+                <p>/ Por Pessoa</p>
+                <div id="result_amount" class="amount"></div>
+            </div>
+            <div>
+                <h3>Total</h3>
+                <p>/ Por Pessoa</p>
+                <div id="result_total" class="total"></div>
+            </div>
+            <button id="button_reset" class="button_reset">Reset</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
